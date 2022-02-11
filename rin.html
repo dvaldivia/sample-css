@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rin Example</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            /*border: 1px solid black;*/
+            /*width:300px;*/
+            height: 400px;
+            margin: auto;
+            width: 100%;
+            position: relative;
+            background: url("cat.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-weight: bold;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .main-container {
+                width: 600px;
+            }
+        }
+
+        .main-container .logo {
+            /*border: 1px solid black;*/
+            width: 60px;
+            height: 60px;
+
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            top:10px;
+            left:10px;
+            background-color: red;
+        }
+        .main-container  .description {
+            /*border: 1px solid black;*/
+            width: 100%;
+            height: 60px;
+
+
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+            position: absolute;
+            top:calc(50% - 50px);
+            left:0px;
+            background-color: rgba(35, 126, 160, 0.47);
+        }
+        .main-container > .bottom-text {
+            /*border: 1px solid black;*/
+            width: 100%;
+            height: 60px;
+            background-color: #999999;
+            position: absolute;
+            top:100%;
+            margin-top: -60px;
+            line-height: 60px;
+
+            font-size: 32px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .main-container {
+                width: 600px;
+                margin:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo">RCU LOGO</div>
+        <div class="description">Make::VR #01</div>
+        <div class="bottom-text">Concept</div>
+    </div>
+</body>
+</html>
